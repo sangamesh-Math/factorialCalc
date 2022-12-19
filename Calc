@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Factorial Calculator</title>
+    </head>
+    <body style="background-color: #9ce0e6; text-align:center">
+      <h1 style="border: 3px; background-color:blue; color: yellow">FACTORIAL CALCULATOR</h1>
+      <br>
+      <br>
+      <p>Enter a number: <input id="ff" ></input></p>
+    <button onclick="fact()">Click here to find factorial of number</button>
+    <br><br>
+    <p id="display"></p>
+    <script>
+      
+      function fact()
+      {
+         j = document.getElementById("ff").value;
+         fact=1;
+        for(let i = 1; i <= j; i++)
+          {
+            fact *= i;
+          }
+        document.getElementById("display").innerHTML="The factorial of entered number " + j + " is " + fact;
+      }
+    </script>
+    </body>
+      
+      
+</html>
